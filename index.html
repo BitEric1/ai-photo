@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Photo Editing</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/switzer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__top">
+                            <div class="hero__title">
+                                Create stunning visuals
+                                <span class="hero__highlight">in seconds</span>
+                            </div>
+                            <div class="hero__note">
+                                <div class="hero__note-item">
+                                    <img
+                                        src="./assets/icons/check.svg"
+                                        alt="Check"
+                                        class="hero__note-icon"
+                                    />
+                                    <h3 class="hero__note-desc">
+                                        Free Background Remover
+                                    </h3>
+                                </div>
+                                <div class="hero__note-item">
+                                    <img
+                                        src="./assets/icons/check.svg"
+                                        alt="Check"
+                                        class="hero__note-icon"
+                                    />
+                                    <h3 class="hero__note-desc">
+                                        Remove Objects
+                                    </h3>
+                                </div>
+                                <div class="hero__note-item">
+                                    <img
+                                        src="./assets/icons/check.svg"
+                                        alt="Check"
+                                        class="hero__note-icon"
+                                    />
+                                    <h3 class="hero__note-desc">
+                                        Image Upscale
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="hero__cta">
+                                <a href="#!" class="btn hero__top-btn">
+                                    Try For Free
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero__body"></div>
+                    </div>
+                </div>
+                <div
+                    class="hero__body"
+                    style="background-image: url('./assets/img/banner.png')"
+                >
+                    <div class="container">
+                        <div class="screen">
+                            <div class="screen__top">
+                                <img
+                                    src="./assets/icons/mac-control.svg"
+                                    alt="Control"
+                                    class="screen__top-control"
+                                />
+                                <div class="screen__top-content">
+                                    <img
+                                        src="./assets/icons/look.svg"
+                                        alt=""
+                                        class="screen__top-icon"
+                                    />
+                                    <p class="screen__top-desc">PixelPro</p>
+                                </div>
+                            </div>
+                            <div class="screen__body">
+                                <div class="screen__body-logo">
+                                    <!-- Logo -->
+                                    <div class="logo">
+                                        <img
+                                            src="./assets/img/logo/logo.svg"
+                                            alt=""
+                                            class="logo__img"
+                                        />
+                                        <h2 class="logo__title">PixelPro</h2>
+                                    </div>
+                                </div>
+                                <div class="screen__list">
+                                    <div class="screen__list-left">
+                                        <!-- Item 1 -->
+                                        <div class="screen__list-item">
+                                            <div class="screen__item-img-wrap">
+                                                <img
+                                                    src="./assets/img/item/screen-1.png"
+                                                    alt="Item 1"
+                                                    class="screen__item-img"
+                                                />
+                                            </div>
+                                            <h3 class="screen__item-desc">
+                                                Upload your image
+                                            </h3>
+                                            <img
+                                                src="./assets/icons/hero-decor-1.svg"
+                                                alt=""
+                                                class="screen__list-left-decor"
+                                            />
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="screen__list-item">
+                                            <div class="screen__item-img-wrap">
+                                                <img
+                                                    src="./assets/img/item/screen-2.png"
+                                                    alt="Item 2"
+                                                    class="screen__item-img"
+                                                />
+                                            </div>
+                                            <h3 class="screen__item-desc">
+                                                Automatically remove background
+                                            </h3>
+                                            <img
+                                                src="./assets/icons/hero-decor-2.svg"
+                                                alt=""
+                                                class="screen__list-left-decor-2"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="screen__list-right">
+                                        <!-- Item 3 -->
+                                        <div class="screen__list-item">
+                                            <div class="screen__item-img-wrap">
+                                                <img
+                                                    src="./assets/img/item/screen-3.png"
+                                                    alt="Item 3"
+                                                    class="screen__item-img"
+                                                />
+                                            </div>
+                                            <h3 class="screen__item-desc">
+                                                Select new or upload new
+                                                background
+                                            </h3>
+                                            <img
+                                                src="./assets/icons/hero-decor-3.svg"
+                                                alt=""
+                                                class="screen__list-left-decor-3"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Branch -->
+            <section class="branch">
+                <h2 class="branch__title">Trusted by 10k+ Business Partners</h2>
+                <div class="branch__list">
+                    <img
+                        src="./assets/icons/fb.svg"
+                        alt="Facebook"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/amz.svg"
+                        alt="Amazon"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/figma.svg"
+                        alt="Figma"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/adb.svg"
+                        alt="Adobe"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/instar.svg"
+                        alt="Instargram"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/shopify.svg"
+                        alt="Shopify"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/shopee.svg"
+                        alt="Shopee"
+                        class="branch__item"
+                    />
+                    <img
+                        src="./assets/icons/alie.svg"
+                        alt="Alie"
+                        class="branch__item"
+                    />
+                </div>
+            </section>
+            <!-- Service -->
+            <div class="service">
+                <div class="container">
+                    <div class="service__inner">
+                        <div class="service__top">
+                            <h2 class="service__title">
+                                Meet your new <span>AI design assistant</span>
+                            </h2>
+                            <p class="service__desc">
+                                Save days of productivity by letting ClipDrop’s
+                                artificial intelligence do the boring and
+                                time-consuming tasks.
+                            </p>
+                        </div>
+                        <div class="service__list">
+                            <!-- Row 1 -->
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="service__item">
+                                        <h3 class="service__item-title">
+                                            <span>Erase any</span> background
+                                        </h3>
+                                        <p class="service__item-desc">
+                                            Edit photos quickly and accurately
+                                            without all the effort. PhotoRoom
+                                            makes it easy to keep the focus on
+                                            the foreground, plus it's 2x more
+                                            accurate than other apps.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn service__item-btn"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 offset-1">
+                                    <div class="service__item">
+                                        <div class="service__item-img-wrap">
+                                            <img
+                                                src="./assets/img/service/service-1.png"
+                                                alt="Service 1"
+                                                class="service__item-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 2 -->
+                            <div class="row">
+                                <div class="col-5 offset-1 order-2">
+                                    <div class="service__item">
+                                        <h3 class="service__item-title">
+                                            <span>Remove objects</span> with a
+                                            swipe
+                                        </h3>
+                                        <p class="service__item-desc">
+                                            Instantly remove unwanted objects
+                                            and defects. With just a swipe of
+                                            your fingertip, you can make sure
+                                            your snapshots are flawless.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn service__item-btn"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 order-1">
+                                    <div class="service__item">
+                                        <div class="service__item-img-wrap">
+                                            <img
+                                                src="./assets/img/service/service-2.png"
+                                                alt="Service 1"
+                                                class="service__item-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 3 -->
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="service__item">
+                                        <h3 class="service__item-title">
+                                            <span>Relight</span> your
+                                            photographs
+                                        </h3>
+                                        <p class="service__item-desc">
+                                            Relight your images with beautiful
+                                            lights. Instantly light unwanted
+                                            objects. With just a swipe of your
+                                            point, you can make sure your
+                                            snapshots are flawless.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn service__item-btn"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 offset-1">
+                                    <div class="service__item">
+                                        <div class="service__item-img-wrap">
+                                            <img
+                                                src="./assets/img/service/service-3.png"
+                                                alt="Service 1"
+                                                class="service__item-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__bottom">
+                            <div class="service__bottom-list">
+                                <!-- Item 1 -->
+                                <div class="service__bottom-item">
+                                    <div class="service__bottom-icon-wrap">
+                                        <img
+                                            src="./assets/icons/service__bottom-1.svg"
+                                            alt=""
+                                            class="service__bottom-icon"
+                                        />
+                                    </div>
+                                    <div class="service__bottom-content">
+                                        <h3 class="service__bottom-title">
+                                            Eliminate acne, wrinkles on the Face
+                                        </h3>
+                                        <p class="service__bottom-desc">
+                                            A picture when you have facial
+                                            wrinkles, red pimples, or other skin
+                                            flaws.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="service__bottom-item">
+                                    <div class="service__bottom-icon-wrap">
+                                        <img
+                                            src="./assets/icons/service__bottom-2.svg"
+                                            alt=""
+                                            class="service__bottom-icon"
+                                        />
+                                    </div>
+                                    <div class="service__bottom-content">
+                                        <h3 class="service__bottom-title">
+                                            Fix old photos
+                                        </h3>
+                                        <p class="service__bottom-desc">
+                                            Simply choose the problematic areas
+                                            on the photo to remove blemishes,
+                                            stains, and rips.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="service__bottom-item">
+                                    <div class="service__bottom-icon-wrap">
+                                        <img
+                                            src="./assets/icons/service__bottom-3.svg"
+                                            alt=""
+                                            class="service__bottom-icon"
+                                        />
+                                    </div>
+                                    <div class="service__bottom-content">
+                                        <h3 class="service__bottom-title">
+                                            Eliminate acne, wrinkles on the Face
+                                        </h3>
+                                        <p class="service__bottom-desc">
+                                            A totally free AI photo altering
+                                            tool is called PixelPro. Simple to
+                                            use, quick photo editing. Be happy
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="service__bottom-item">
+                                    <div class="service__bottom-icon-wrap">
+                                        <img
+                                            src="./assets/icons/service__bottom-4.svg"
+                                            alt=""
+                                            class="service__bottom-icon"
+                                        />
+                                    </div>
+                                    <div class="service__bottom-content">
+                                        <h3 class="service__bottom-title">
+                                            Eliminate acne, wrinkles on the Face
+                                        </h3>
+                                        <p class="service__bottom-desc">
+                                            Use PixelPro on your smartphone or
+                                            web browser to edit images anywhere.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#!"
+                                class="btn service__item-btn service__bottom-btn"
+                            >
+                                Try For Free
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback -->
+            <section class="feedback">
+                <div class="feedback__inner">
+                    <div class="feedback__top">
+                        <h3 class="feedback__title">
+                            <span>People love</span> PixelPro
+                        </h3>
+                        <div class="feedback__control">
+                            <button class="feedback__control-btn">
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt="Feedback control"
+                                    class="feedback__control-icon"
+                                />
+                            </button>
+                            <button class="feedback__control-btn">
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt="Feedback control"
+                                    class="feedback__control-icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="feedback__list">
+                        <!-- Item 1 -->
+                        <div class="feedback__item">
+                            <div class="feedback__item-icon-wrap">
+                                <img
+                                    src="./assets/icons/feedback-item-1.svg"
+                                    alt="Feedback item"
+                                    class="feedback__item-icon"
+                                />
+                            </div>
+                            <p class="feedback__item-desc">
+                                “With Popwork, I have access to all the
+                                important information of my team. With Popwork,
+                                I have access to all the important. With
+                                Popwork, I have access to all the important
+                                information of my team. With Popwork”
+                            </p>
+                            <div class="feedback__item-info">
+                                <div class="feedback__item-avatar-wrap">
+                                    <img
+                                        src="./assets/img/avatar/avatar-1.png"
+                                        alt="Avatar"
+                                        class="feedback__item-avatar"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-info-name">
+                                        Moskur Alom
+                                    </h3>
+                                    <p class="feedback__item-info-desc">
+                                        Co Founder at webdesign.gdn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="feedback__item">
+                            <div class="feedback__item-icon-wrap">
+                                <img
+                                    src="./assets/icons/feedback-item-1.svg"
+                                    alt="Feedback item"
+                                    class="feedback__item-icon"
+                                />
+                            </div>
+                            <p class="feedback__item-desc">
+                                “With Popwork, I have access to all the
+                                important information of my team. With Popwork,
+                                I have access to all the important. With
+                                Popwork, I have access to all the important
+                                information of my team. With Popwork”
+                            </p>
+                            <div class="feedback__item-info">
+                                <div class="feedback__item-avatar-wrap">
+                                    <img
+                                        src="./assets/img/avatar/avatar-1.png"
+                                        alt="Avatar"
+                                        class="feedback__item-avatar"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-info-name">
+                                        Moskur Alom
+                                    </h3>
+                                    <p class="feedback__item-info-desc">
+                                        Co Founder at webdesign.gdn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="feedback__item feedback__item--active">
+                            <div class="feedback__item-icon-wrap">
+                                <img
+                                    src="./assets/icons/feedback-item-2.svg"
+                                    alt="Feedback item"
+                                    class="feedback__item-icon"
+                                />
+                            </div>
+                            <p class="feedback__item-desc">
+                                “With Popwork, I have access to all the
+                                important information of my team. With Popwork,
+                                I have access to all the important. With
+                                Popwork, I have access to all the important
+                                information of my team. With Popwork”
+                            </p>
+                            <div class="feedback__item-info">
+                                <div class="feedback__item-avatar-wrap">
+                                    <img
+                                        src="./assets/img/avatar/avatar-2.png"
+                                        alt="Avatar"
+                                        class="feedback__item-avatar"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-info-name">
+                                        Aliénor Behaghel
+                                    </h3>
+                                    <p class="feedback__item-info-desc">
+                                        Co Founder at webdesign.gdn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="feedback__item">
+                            <div class="feedback__item-icon-wrap">
+                                <img
+                                    src="./assets/icons/feedback-item-3.svg"
+                                    alt="Feedback item"
+                                    class="feedback__item-icon"
+                                />
+                            </div>
+                            <p class="feedback__item-desc">
+                                “With Popwork, I have access to all the
+                                important information of my team. With Popwork,
+                                I have access to all the important. With
+                                Popwork, I have access to all the important
+                                information of my team. With Popwork”
+                            </p>
+                            <div class="feedback__item-info">
+                                <div class="feedback__item-avatar-wrap">
+                                    <img
+                                        src="./assets/img/avatar/avatar-3.png"
+                                        alt="Avatar"
+                                        class="feedback__item-avatar"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-info-name">
+                                        Aliénor Behaghel
+                                    </h3>
+                                    <p class="feedback__item-info-desc">
+                                        Co Founder at webdesign.gdn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="feedback__item">
+                            <div class="feedback__item-icon-wrap">
+                                <img
+                                    src="./assets/icons/feedback-item-3.svg"
+                                    alt="Feedback item"
+                                    class="feedback__item-icon"
+                                />
+                            </div>
+                            <p class="feedback__item-desc">
+                                “With Popwork, I have access to all the
+                                important information of my team. With Popwork,
+                                I have access to all the important. With
+                                Popwork, I have access to all the important
+                                information of my team. With Popwork”
+                            </p>
+                            <div class="feedback__item-info">
+                                <div class="feedback__item-avatar-wrap">
+                                    <img
+                                        src="./assets/img/avatar/avatar-3.png"
+                                        alt="Avatar"
+                                        class="feedback__item-avatar"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-info-name">
+                                        Aliénor Behaghel
+                                    </h3>
+                                    <p class="feedback__item-info-desc">
+                                        Co Founder at webdesign.gdn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__controls">
+                        <div class="feedback__controls-item"></div>
+                        <div class="feedback__controls-item"></div>
+                        <div
+                            class="feedback__controls-item feedback__controls-item--active"
+                        ></div>
+                        <div class="feedback__controls-item"></div>
+                        <div class="feedback__controls-item"></div>
+                        <div class="feedback__controls-item"></div>
+                        <div class="feedback__controls-item"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <h2 class="blog__title">Latest Articles</h2>
+                    </div>
+                    <div class="blog__list">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- Item 1 -->
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-1.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            10 Effective Strategies to Remove
+                                            Background from Images
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        High-quality pictures are not enough,
+                                        but editing them is also essential for
+                                        taking good pictures, lighting, angles,
+                                        and many factors impact.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-1.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Moinul Hasan
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6">
+                                <!-- Item 2 -->
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-2.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            7 Powerful Strategies to Build
+                                            Stronger Relationships
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        A passport is an essential travel
+                                        document confirming identity and
+                                        citizenship. A passport photo with a
+                                        plain background is required to ensure
+                                        that the photo.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-2.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Ksenia Sverku
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!" class="btn blog__btn">See All Posts</a>
+                </div>
+            </section>
+            <!-- FAQs -->
+            <section class="faqs">
+                <div class="container">
+                    <div class="faqs__inner">
+                        <h2 class="faqs__title">FAQs</h2>
+                        <div class="faqs__list">
+                            <div class="row">
+                                <div class="col-10 offset-1">
+                                    <!-- Item 1 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq1"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq1"
+                                            >
+                                                How to remove the background of
+                                                a picture for free?
+                                            </label>
+                                            <label for="faq1">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            To remove the background of a
+                                            picture, go to
+                                            PixelPro.co/remove-background, and
+                                            upload your image. PixelPro will
+                                            remove the background for you, and
+                                            you will be able to download your HD
+                                            image for free.
+                                        </p>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq2"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq2"
+                                            >
+                                                How to remove an object from a
+                                                picture?
+                                            </label>
+                                            <label for="faq2">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            Write your answer here.
+                                        </p>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq3"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq3"
+                                            >
+                                                How to remove a person from a
+                                                picture?
+                                            </label>
+                                            <label for="faq3">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            Write your answer here.
+                                        </p>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq4"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq4"
+                                            >
+                                                How to remove watermark?
+                                            </label>
+                                            <label for="faq4">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            Write your answer here.
+                                        </p>
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq5"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq5"
+                                            >
+                                                How to remove background from
+                                                picture on iPhone?
+                                            </label>
+                                            <label for="faq5">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            Write your answer here.
+                                        </p>
+                                    </div>
+                                    <!-- Item 6 -->
+                                    <div class="faqs__item">
+                                        <input
+                                            type="checkbox"
+                                            id="faq6"
+                                            class="faqs__item-checkbox"
+                                        />
+                                        <div class="faqs__item-content">
+                                            <label
+                                                class="faqs__item-title"
+                                                for="faq6"
+                                            >
+                                                How to remove background from
+                                                picture on Android?
+                                            </label>
+                                            <label for="faq6">
+                                                <div
+                                                    class="faqs__item-icon-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/minus.svg"
+                                                        alt=""
+                                                        class="faqs__item-icon"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <p class="faqs__item-desc">
+                                            Write your answer here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Download -->
+            <section class="download">
+                <div class="container">
+                    <div class="download__inner">
+                        <h2 class="download__title">
+                            Go further with PixelPro
+                        </h2>
+                        <p class="download__desc">
+                            Want to unlock even more features to make your
+                            photos shine? With PixelPro, you'll get access to
+                            useful features like Batch Editor, HD quality, Smart
+                            Resize, and more.
+                        </p>
+                        <div class="download__links">
+                            <a href="#!" class="download__link">
+                                <img
+                                    src="./assets/icons/appstore.svg"
+                                    alt="App Store"
+                                    class="download__img"
+                                />
+                            </a>
+                            <a href="#!" class="download__link">
+                                <img
+                                    src="./assets/icons/ggplay.svg"
+                                    alt="Google Play"
+                                    class="download__img"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

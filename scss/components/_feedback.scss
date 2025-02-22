@@ -1,0 +1,122 @@
+.feedback {
+    padding: 100px 0;
+    background: linear-gradient(130deg, #b12eff 2.42%, #ff5993 101.66%);
+    &__inner {
+    }
+
+    &__top {
+        padding: 0 135px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 7.2rem;
+        font-weight: 600;
+        line-height: 119.444%;
+
+        & span {
+            color: #ffcb01;
+        }
+    }
+
+    &__control {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        &-btn {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-btn:nth-child(1) {
+            opacity: 0.5;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__list {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 46px;
+        overflow: hidden;
+    }
+
+    &__item {
+        flex-shrink: 0;
+        padding: 28px;
+        width: 429px;
+        height: 346px;
+        border-radius: 20px;
+        background-color: #ffff;
+        opacity: 0.5;
+
+        &--active {
+            opacity: 1; 
+        }
+
+        &-desc {
+            margin-top: 34px;
+            color: #2e2e2e;
+            line-height: 175%;
+        }
+
+        &-info {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        &-avatar-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+        }
+
+        &-avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-info-name {
+            color: #000;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 140%;
+        }
+
+        &-info-desc {
+            color: #2e2e2e;
+            font-size: 1.4rem;
+            line-height: 157.143%;
+        }
+    }
+
+    &__controls {
+        margin: 40px auto 0;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        &-item {
+            width: 16px;
+            height: 6px;
+            border-radius: 20px;
+            background: #fff;
+            opacity: 0.5;
+
+            &--active {
+                opacity: 1;
+            }
+        }
+    }
+}

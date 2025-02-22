@@ -1,0 +1,32 @@
+.download {
+    padding: 116px 0;
+    background-color: #101112;
+    &__inner {
+        padding: 110px 100px;
+        border-radius: 20px;
+        background: linear-gradient(101deg, #ac50ff -0.27%, #9f3bfa 96.12%);
+    }
+
+    &__title {
+        width: 442px;
+        color: #fff;
+        font-size: 6.2rem;
+        font-weight: 600;
+        line-height: 119.355%;
+    }
+
+    &__desc {
+        width: 470px;
+        margin-top: 18px;
+        color: #e8e8e8;
+        font-size: 1.4rem;
+        line-height: 157.143%;
+    }
+
+    &__links {
+        margin-top: 42px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+}
