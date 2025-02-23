@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Photo Editing | Blogs</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/switzer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Blog -->
+            <section class="blog-page">
+                <div class="blog-page__inner">
+                    <img
+                        src="./assets/icons/blog-page-decor-l.svg"
+                        alt=""
+                        class="blog-page__decor"
+                    />
+                    <h2 class="blog-page__title">
+                        Our latest <span class="color-2">blogs</span>
+                    </h2>
+                    <img
+                        src="./assets/icons/blog-page-decor-r.svg"
+                        alt=""
+                        class="blog-page__decor blog-page__decor-2"
+                    />
+                </div>
+                <div class="container">
+                    <div class="blog__list">
+                        <div class="row row-cols-2">
+                            <!-- Item 1 -->
+                            <div class="col-6">
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-1.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            10 Effective Strategies to Remove
+                                            Background from Images
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        High-quality pictures are not enough,
+                                        but editing them is also essential for
+                                        taking good pictures, lighting, angles,
+                                        and many factors impact.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-1.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Moinul Hasan
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col-6">
+                                <article class="blog__item">
+                                    <a href="./blog-detail.html">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-2.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="./blog-detail.html">
+                                        <h3 class="blog__item-title">
+                                            7 Powerful Strategies to Build
+                                            Stronger Relationships
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        A passport is an essential travel
+                                        document confirming identity and
+                                        citizenship. A passport photo with a
+                                        plain background is required to ensure
+                                        that the photo.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-2.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Ksenia Sverku
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col-6 gy-4">
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-3.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            Say Goodbye to Background Clutter:
+                                            10 Tools for Easy Removal
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        High-quality pictures are not enough,
+                                        but editing them is also essential for
+                                        taking good pictures, lighting, angles,
+                                        and many factors impact.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-1.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Moinul Hasan
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="col-6 gy-4">
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-4.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            Polish Your Photos: 10 Expert Tips
+                                            for Background Remova
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        A passport is an essential travel
+                                        document confirming identity and
+                                        citizenship. A passport photo with a
+                                        plain background is required to ensure
+                                        that the photo.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-2.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Ksenia Sverku
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Trending -->
+            <section class="trend">
+                <div class="container">
+                    <h2 class="trend__title">Trending</h2>
+                    <div class="trend__list">
+                        <div class="row row-cols-2">
+                            <!-- Item 1 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-1.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-2.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-3.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            10 Proven Approaches for Stunning
+                                            Results
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-4.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-5.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="col">
+                                <div class="trend__item">
+                                    <div class="trend__item-img-wrap">
+                                        <img
+                                            src="./assets/img/trend/trend-item-6.png"
+                                            alt=""
+                                            class="trend__item-img"
+                                        />
+                                    </div>
+                                    <div class="trend__item-content">
+                                        <p class="trend__item-sub-title">
+                                            11 min read
+                                        </p>
+                                        <h3 class="trend__item-title">
+                                            10 Proven Approaches for Stunning
+                                            Results
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content -->
+            <section class="content">
+                <div class="container">
+                    <div class="content__inner">
+                        <h2 class="content__title">Explore more content</h2>
+                        <div class="content__list">
+                            <div class="row row-cols-3">
+                                <!-- Item 1 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-1.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-2.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-2.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            10 Strategies for Seamless
+                                            Background Removal
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-1.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-3.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            10 Proven Approaches for Stunning
+                                            Results
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-2.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-4.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            Top Background Removal Apps for
+                                            Android
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-1.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-5.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            A Step-by-Step Guide to Making
+                                            Images Transparent
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-2.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 6 -->
+                                <div class="col">
+                                    <div class="content__item">
+                                        <div class="content__item-img-wrap">
+                                            <img
+                                                src="./assets/img/trend/content-item-6.png"
+                                                alt=""
+                                                class="content__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="content__item-title">
+                                            Achieving a Flawless White
+                                            Background in Photography.
+                                        </h3>
+                                        <p class="content__item-desc">
+                                            Discover the many live podcasting
+                                            formats, how to podcast live, and
+                                            the best ways to capture a live
+                                            podcast.
+                                        </p>
+                                        <div class="content__item-info">
+                                            <img
+                                                src="./assets/img/avatar/blog-avatar-2.png"
+                                                alt=""
+                                                class="content__item-info-avatar"
+                                            />
+                                            <h4 class="content__item-info-name">
+                                                Ksenia Sverku
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#!" class="btn content__btn">Load More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

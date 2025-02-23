@@ -23,7 +23,7 @@
             border-radius: 38px;
             background: rgba(255, 255, 255, 0.1);
 
-            &:hover > .product__list {
+            &:hover + .product__list {
                 opacity: 1;
                 visibility: visible;
                 transform: scale(1);

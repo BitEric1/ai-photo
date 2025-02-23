@@ -69,8 +69,14 @@
         color: #000;
         border-radius: 25px;
         background-color: #fff;
+        transition: all 0.3s linear;
 
         &--active {
+            color: #fff;
+            background-color: #0058ff;
+        }
+
+        &:hover {
             color: #fff;
             background-color: #0058ff;
         }

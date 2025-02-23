@@ -1,0 +1,21 @@
+.relight {
+    padding: 0 !important;
+    
+    &__list {
+        margin-top: 0 !important;
+    }
+
+    &__item-img-wrap {
+        width: 537px;
+        height: 480px;
+    }
+
+    &__btn {
+        margin-top: 44px;
+        width: 200px;
+    }
+
+    &__item-title {
+        width: 470px;
+    }
+}

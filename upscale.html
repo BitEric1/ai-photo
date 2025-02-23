@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Photo Editing | Remove Objects</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/switzer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Remove hero -->
+            <section class="remove-section">
+                <div class="container">
+                    <div class="remove-section__inner upscale__inner">
+                        <div class="remove-section__left">
+                            <h1
+                                class="heading remove-section__heading upscale__title"
+                            >
+                                Upscale, denoise and enhance your images
+                                <span class="color-4">FREE</span>
+                            </h1>
+                            <!-- Upload file -->
+                            <div class="upload">
+                                <div class="upload__inner">
+                                    <div class="upload__input">
+                                        <div class="upload__input-icon-wrap">
+                                            <img
+                                                src="./assets/icons/plus.svg"
+                                                alt="Icon"
+                                                class="upload__input-icon"
+                                            />
+                                        </div>
+                                        <p class="upload__input-desc">
+                                            Upload Image
+                                        </p>
+                                    </div>
+                                    <p class="upload__desc">
+                                        Drop an image or paste
+                                    </p>
+                                </div>
+                                <p class="upload__bottom-desc">
+                                    No image? Try one of these:
+                                    <img
+                                        src="./assets/icons/arrow-down-small.svg"
+                                        alt="Icon"
+                                    />
+                                </p>
+                                <div class="upload__list-imgs">
+                                    <img
+                                        src="./assets/img/remove/remove-1.png"
+                                        alt=""
+                                        class="upload__list-img"
+                                    />
+                                    <img
+                                        src="./assets/img/remove/remove-2.png"
+                                        alt=""
+                                        class="upload__list-img"
+                                    />
+                                    <img
+                                        src="./assets/img/remove/remove-3.png"
+                                        alt=""
+                                        class="upload__list-img"
+                                    />
+                                    <img
+                                        src="./assets/img/remove/remove-4.png"
+                                        alt=""
+                                        class="upload__list-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="remove-section__right">
+                            <img
+                                src="./assets/img/remove/upscale-item-1.png"
+                                alt=""
+                                class="remove-section__right-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service -->
+            <section class="section-service">
+                <div class="container">
+                    <div class="section-service__inner">
+                        <h2 class="heading-2 section-service__title">
+                            Upgrade and <span class="color-2">4x</span>-enhance
+                            Your Images
+                        </h2>
+                        <p class="section-service__desc upscale__desc">
+                            Prepare your low-resolution photographs for all of
+                            your personal and professional purposes by enhancing
+                            them without sacrificing any detail.
+                        </p>
+                        <div class="section-service__img-wrap">
+                            <img
+                                src="./assets/img/remove/upscale-item-2.png"
+                                alt=""
+                                class="section-service__img"
+                            />
+                        </div>
+                        <a href="#!" class="btn section-service__btn">
+                            Try For Free
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Service -->
+            <div class="service">
+                <div class="container">
+                    <div class="service__inner">
+                        <div class="service__list">
+                            <!-- Row 1 -->
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="service__item">
+                                        <h3
+                                            class="service__item-title remove-oj__title upscale__list-title"
+                                        >
+                                            Unique
+                                            <span class="color-3">
+                                                Features
+                                            </span>
+                                        </h3>
+                                        <p class="service__item-desc">
+                                            Upscale and enhance your images
+                                            using our powerful AI technology
+                                            with only a few clicks
+                                        </p>
+                                        <div class="upscale__feature-list">
+                                            <div class="upscale__feature-item">
+                                                <img
+                                                    src="./assets/icons/check-icon.svg"
+                                                    alt=""
+                                                    class="upscale__feature-icon"
+                                                />
+                                                <p
+                                                    class="upscale__feature-desc"
+                                                >
+                                                    Automatic & Quick Results
+                                                </p>
+                                            </div>
+                                            <div class="upscale__feature-item">
+                                                <img
+                                                    src="./assets/icons/check-icon.svg"
+                                                    alt=""
+                                                    class="upscale__feature-icon"
+                                                />
+                                                <p
+                                                    class="upscale__feature-desc"
+                                                >
+                                                    Increase Resolution
+                                                </p>
+                                            </div>
+                                            <div class="upscale__feature-item">
+                                                <img
+                                                    src="./assets/icons/check-icon.svg"
+                                                    alt=""
+                                                    class="upscale__feature-icon"
+                                                />
+                                                <p
+                                                    class="upscale__feature-desc"
+                                                >
+                                                    Retain Details
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a
+                                            href="#!"
+                                            class="btn service__item-btn remove-oj__btn"
+                                        >
+                                            Upload Image
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="service__item">
+                                        <div class="upscale__item-img-wrap">
+                                            <img
+                                                src="./assets/img/remove/upscale-item-3.png"
+                                                alt="Service 1"
+                                                class="service__item-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 2 -->
+                            <div class="row">
+                                <div class="col-5 offset-1 order-2">
+                                    <div class="service__item">
+                                        <h3 class="service__item-title">
+                                            <span>Upscale</span> any
+                                            Individual's Photo
+                                        </h3>
+                                        <p class="service__item-desc">
+                                            Enhancement has never been this
+                                            simple, but with AI's assistance, it
+                                            can be completed in a matter of
+                                            seconds without the need for pricy
+                                            tools.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn service__item-btn remove-oj__btn"
+                                        >
+                                            Upload Image
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 order-1">
+                                    <div class="service__item">
+                                        <div class="service__item-img-wrap">
+                                            <img
+                                                src="./assets/img/remove/upscale-item-4.png"
+                                                alt="Service 1"
+                                                class="service__item-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product -->
+            <section class="product-section">
+                <div class="container">
+                    <div class="product-section__inner">
+                        <h2 class="product-section__title heading-2">
+                            Try Our Other <span>Products</span>
+                        </h2>
+                        <div class="product-section__list">
+                            <div class="row row-cols-3">
+                                <!-- Item 1 -->
+                                <div class="col">
+                                    <article
+                                        class="product-section__item product-section__item--active"
+                                    >
+                                        <a href="#!">
+                                            <div
+                                                class="product-section__item-img-wrap"
+                                            >
+                                                <img
+                                                    src="./assets/img/product/product-item-1.png"
+                                                    alt=""
+                                                    class="product-section__item-img"
+                                                />
+                                            </div>
+                                        </a>
+                                        <a href="#!">
+                                            <h3
+                                                class="product-section__item-section-title"
+                                            >
+                                                Remove Objects
+                                            </h3>
+                                        </a>
+                                        <p
+                                            class="product-section__item-section-desc"
+                                        >
+                                            Remove any object, person, text, or
+                                            defect from pictures in one click
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn product-section__item-btn product-section__item-btn--active"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </article>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="col">
+                                    <article class="product-section__item">
+                                        <a href="#!">
+                                            <div
+                                                class="product-section__item-img-wrap"
+                                            >
+                                                <img
+                                                    src="./assets/img/product/product-item-2.png"
+                                                    alt=""
+                                                    class="product-section__item-img"
+                                                />
+                                            </div>
+                                        </a>
+                                        <a href="#!">
+                                            <h3
+                                                class="product-section__item-section-title"
+                                            >
+                                                Upscale
+                                            </h3>
+                                        </a>
+                                        <p
+                                            class="product-section__item-section-desc"
+                                        >
+                                            Modern AI is used by us to upscale
+                                            and improve photos. Convert your SD
+                                            photos to HD photos.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn product-section__item-btn product-section__item-btn--active"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </article>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="col">
+                                    <article class="product-section__item">
+                                        <a href="#!">
+                                            <div
+                                                class="product-section__item-img-wrap"
+                                            >
+                                                <img
+                                                    src="./assets/img/product/product-item-3.png"
+                                                    alt=""
+                                                    class="product-section__item-img"
+                                                />
+                                            </div>
+                                        </a>
+                                        <a href="#!">
+                                            <h3
+                                                class="product-section__item-section-title"
+                                            >
+                                                Relight
+                                            </h3>
+                                        </a>
+                                        <p
+                                            class="product-section__item-section-desc"
+                                        >
+                                            Modern AI is used by us to upscale
+                                            and improve photos. Convert your
+                                            normal photos to RGB photos.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="btn product-section__item-btn"
+                                        >
+                                            Try For Free
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <h2 class="blog__title">Latest Articles</h2>
+                    </div>
+                    <div class="blog__list">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- Item 1 -->
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-1.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            10 Effective Strategies to Remove
+                                            Background from Images
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        High-quality pictures are not enough,
+                                        but editing them is also essential for
+                                        taking good pictures, lighting, angles,
+                                        and many factors impact.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-1.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Moinul Hasan
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6">
+                                <!-- Item 2 -->
+                                <article class="blog__item">
+                                    <a href="#!">
+                                        <div class="blog__item-img-wrap">
+                                            <img
+                                                src="./assets/img/item/blog-2.png"
+                                                alt="Blog"
+                                                class="blog__item-img"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a href="#!">
+                                        <h3 class="blog__item-title">
+                                            7 Powerful Strategies to Build
+                                            Stronger Relationships
+                                        </h3>
+                                    </a>
+                                    <p class="blog__item-desc">
+                                        A passport is an essential travel
+                                        document confirming identity and
+                                        citizenship. A passport photo with a
+                                        plain background is required to ensure
+                                        that the photo.
+                                    </p>
+                                    <div class="blog__item-info">
+                                        <img
+                                            src="./assets/img/avatar/blog-avatar-2.png"
+                                            alt="Avatar"
+                                            class="blog__item-info-avatar"
+                                        />
+                                        <h4 class="blog__item-info-name">
+                                            Ksenia Sverku
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!" class="btn blog__btn">See All Posts</a>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
