@@ -1,0 +1,31 @@
+.sign-in {
+    &__form {
+        width: 100%;
+    }
+
+    &__group-pricing {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & a {
+            color: #0058ff;
+        }
+    }
+
+    &__label {
+        &::before {
+            top: 1px;
+        }
+    }
+
+    &__img-wrap {
+        height: 636.44px;
+        background-color: #722fff;
+    }
+
+    &__img {
+        width: 570px;
+        height: 632px;
+    }
+}
